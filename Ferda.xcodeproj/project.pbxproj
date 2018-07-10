@@ -1,0 +1,679 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		491C77DB204E86135DDD3B43 /* Pods_Ferda.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCB6DFBEA4F93878A8C8537F /* Pods_Ferda.framework */; };
+		ADD92DA020C8AB5100E682BE /* RootWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD92D9F20C8AB5100E682BE /* RootWindow.swift */; };
+		ADD92DA220C8AD6600E682BE /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD92DA120C8AD6600E682BE /* BaseViewModel.swift */; };
+		ADD92DA420C8ADCA00E682BE /* StartupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD92DA320C8ADCA00E682BE /* StartupViewModel.swift */; };
+		ADD92DA620C8ADED00E682BE /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD92DA520C8ADED00E682BE /* AuthenticationViewModel.swift */; };
+		ADD92DA820C8B1AE00E682BE /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD92DA720C8B1AE00E682BE /* DashboardViewModel.swift */; };
+		ADEF14C720EFCF170097AB9F /* ModalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEF14C620EFCF170097AB9F /* ModalViewModel.swift */; };
+		ADEF14C920EFFB450097AB9F /* BaseScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEF14C820EFFB450097AB9F /* BaseScreenModel.swift */; };
+		ADFF426A20C20871004AE8EE /* StartupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFF426920C20871004AE8EE /* StartupViewController.swift */; };
+		ADFF426C20C21173004AE8EE /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFF426B20C21173004AE8EE /* BaseViewController.swift */; };
+		ADFFB1B220BB347800CF27E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFFB1B120BB347800CF27E8 /* AppDelegate.swift */; };
+		ADFFB1BA20BB347800CF27E8 /* Ferda.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ADFFB1B820BB347800CF27E8 /* Ferda.xcdatamodeld */; };
+		ADFFB1BC20BB347900CF27E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADFFB1BB20BB347900CF27E8 /* Assets.xcassets */; };
+		ADFFB1BF20BB347900CF27E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADFFB1BD20BB347900CF27E8 /* LaunchScreen.storyboard */; };
+		ADFFB1CA20BB347900CF27E8 /* FerdaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFFB1C920BB347900CF27E8 /* FerdaTests.swift */; };
+		ADFFB1D520BB353500CF27E8 /* Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFFB1D420BB353500CF27E8 /* Core.swift */; };
+		ADFFB1D720BB37D800CF27E8 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFFB1D620BB37D800CF27E8 /* AuthenticationManager.swift */; };
+		ADFFB1D920BB6A3200CF27E8 /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFFB1D820BB6A3200CF27E8 /* AuthenticationViewController.swift */; };
+		ADFFB1DB20BB6A3B00CF27E8 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFFB1DA20BB6A3B00CF27E8 /* DashboardViewController.swift */; };
+		ADFFB1DD20BB6ED300CF27E8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ADFFB1DC20BB6ED300CF27E8 /* GoogleService-Info.plist */; };
+		B4D837F7D2BF079B358D0319 /* Pods_FerdaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C1B12B2E525372B593468F8 /* Pods_FerdaTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ADFFB1C620BB347900CF27E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADFFB1A620BB347800CF27E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADFFB1AD20BB347800CF27E8;
+			remoteInfo = Ferda;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00FE089C1F646FFD4F9DCC90 /* Pods-FerdaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FerdaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FerdaTests/Pods-FerdaTests.release.xcconfig"; sourceTree = "<group>"; };
+		20C4D1DA8DAD98C2CE2F48DB /* Pods-Ferda.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ferda.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ferda/Pods-Ferda.release.xcconfig"; sourceTree = "<group>"; };
+		4C1B12B2E525372B593468F8 /* Pods_FerdaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FerdaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADD92D9F20C8AB5100E682BE /* RootWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootWindow.swift; sourceTree = "<group>"; };
+		ADD92DA120C8AD6600E682BE /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		ADD92DA320C8ADCA00E682BE /* StartupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupViewModel.swift; sourceTree = "<group>"; };
+		ADD92DA520C8ADED00E682BE /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		ADD92DA720C8B1AE00E682BE /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		ADEF14C620EFCF170097AB9F /* ModalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewModel.swift; sourceTree = "<group>"; };
+		ADEF14C820EFFB450097AB9F /* BaseScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseScreenModel.swift; sourceTree = "<group>"; };
+		ADFF426920C20871004AE8EE /* StartupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupViewController.swift; sourceTree = "<group>"; };
+		ADFF426B20C21173004AE8EE /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		ADFFB1AE20BB347800CF27E8 /* Ferda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ferda.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADFFB1B120BB347800CF27E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ADFFB1B920BB347800CF27E8 /* Ferda.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Ferda.xcdatamodel; sourceTree = "<group>"; };
+		ADFFB1BB20BB347900CF27E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ADFFB1BE20BB347900CF27E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ADFFB1C020BB347900CF27E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADFFB1C520BB347900CF27E8 /* FerdaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FerdaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADFFB1C920BB347900CF27E8 /* FerdaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FerdaTests.swift; sourceTree = "<group>"; };
+		ADFFB1CB20BB347900CF27E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADFFB1D420BB353500CF27E8 /* Core.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core.swift; sourceTree = "<group>"; };
+		ADFFB1D620BB37D800CF27E8 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
+		ADFFB1D820BB6A3200CF27E8 /* AuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
+		ADFFB1DA20BB6A3B00CF27E8 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		ADFFB1DC20BB6ED300CF27E8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		B1B796D50EEE02C5ED525F4B /* Pods-FerdaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FerdaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FerdaTests/Pods-FerdaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D7740B3992E25D039A0F8536 /* Pods-Ferda.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ferda.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ferda/Pods-Ferda.debug.xcconfig"; sourceTree = "<group>"; };
+		FCB6DFBEA4F93878A8C8537F /* Pods_Ferda.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ferda.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ADFFB1AB20BB347800CF27E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				491C77DB204E86135DDD3B43 /* Pods_Ferda.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADFFB1C220BB347900CF27E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4D837F7D2BF079B358D0319 /* Pods_FerdaTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ADFFB1A520BB347800CF27E8 = {
+			isa = PBXGroup;
+			children = (
+				ADFFB1B020BB347800CF27E8 /* Ferda */,
+				ADFFB1C820BB347900CF27E8 /* FerdaTests */,
+				ADFFB1AF20BB347800CF27E8 /* Products */,
+				CD93C7026F6ECEBFE576A7AB /* Pods */,
+				FD16EDBEC1D510604ABC2C7C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		ADFFB1AF20BB347800CF27E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ADFFB1AE20BB347800CF27E8 /* Ferda.app */,
+				ADFFB1C520BB347900CF27E8 /* FerdaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ADFFB1B020BB347800CF27E8 /* Ferda */ = {
+			isa = PBXGroup;
+			children = (
+				ADFFB1B120BB347800CF27E8 /* AppDelegate.swift */,
+				ADD92D9F20C8AB5100E682BE /* RootWindow.swift */,
+				ADFFB1D420BB353500CF27E8 /* Core.swift */,
+				ADFF426920C20871004AE8EE /* StartupViewController.swift */,
+				ADD92DA320C8ADCA00E682BE /* StartupViewModel.swift */,
+				ADFFB1D820BB6A3200CF27E8 /* AuthenticationViewController.swift */,
+				ADD92DA520C8ADED00E682BE /* AuthenticationViewModel.swift */,
+				ADFFB1DA20BB6A3B00CF27E8 /* DashboardViewController.swift */,
+				ADD92DA720C8B1AE00E682BE /* DashboardViewModel.swift */,
+				ADFFB1D620BB37D800CF27E8 /* AuthenticationManager.swift */,
+				ADFF426B20C21173004AE8EE /* BaseViewController.swift */,
+				ADD92DA120C8AD6600E682BE /* BaseViewModel.swift */,
+				ADEF14C820EFFB450097AB9F /* BaseScreenModel.swift */,
+				ADEF14C620EFCF170097AB9F /* ModalViewModel.swift */,
+				ADFFB1BB20BB347900CF27E8 /* Assets.xcassets */,
+				ADFFB1BD20BB347900CF27E8 /* LaunchScreen.storyboard */,
+				ADFFB1C020BB347900CF27E8 /* Info.plist */,
+				ADFFB1B820BB347800CF27E8 /* Ferda.xcdatamodeld */,
+				ADFFB1DC20BB6ED300CF27E8 /* GoogleService-Info.plist */,
+			);
+			path = Ferda;
+			sourceTree = "<group>";
+		};
+		ADFFB1C820BB347900CF27E8 /* FerdaTests */ = {
+			isa = PBXGroup;
+			children = (
+				ADFFB1C920BB347900CF27E8 /* FerdaTests.swift */,
+				ADFFB1CB20BB347900CF27E8 /* Info.plist */,
+			);
+			path = FerdaTests;
+			sourceTree = "<group>";
+		};
+		CD93C7026F6ECEBFE576A7AB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D7740B3992E25D039A0F8536 /* Pods-Ferda.debug.xcconfig */,
+				20C4D1DA8DAD98C2CE2F48DB /* Pods-Ferda.release.xcconfig */,
+				B1B796D50EEE02C5ED525F4B /* Pods-FerdaTests.debug.xcconfig */,
+				00FE089C1F646FFD4F9DCC90 /* Pods-FerdaTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FD16EDBEC1D510604ABC2C7C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FCB6DFBEA4F93878A8C8537F /* Pods_Ferda.framework */,
+				4C1B12B2E525372B593468F8 /* Pods_FerdaTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ADFFB1AD20BB347800CF27E8 /* Ferda */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADFFB1CE20BB347900CF27E8 /* Build configuration list for PBXNativeTarget "Ferda" */;
+			buildPhases = (
+				5ABF1362D8489ADFF2E5C720 /* [CP] Check Pods Manifest.lock */,
+				ADFFB1AA20BB347800CF27E8 /* Sources */,
+				ADFFB1AB20BB347800CF27E8 /* Frameworks */,
+				ADFFB1AC20BB347800CF27E8 /* Resources */,
+				6FFB0196011972A12BEFCC16 /* [CP] Embed Pods Frameworks */,
+				17BB57F8BEE088A12CD67A76 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ferda;
+			productName = Ferda;
+			productReference = ADFFB1AE20BB347800CF27E8 /* Ferda.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ADFFB1C420BB347900CF27E8 /* FerdaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADFFB1D120BB347900CF27E8 /* Build configuration list for PBXNativeTarget "FerdaTests" */;
+			buildPhases = (
+				EBC104968AA8DD0D4846EDFA /* [CP] Check Pods Manifest.lock */,
+				ADFFB1C120BB347900CF27E8 /* Sources */,
+				ADFFB1C220BB347900CF27E8 /* Frameworks */,
+				ADFFB1C320BB347900CF27E8 /* Resources */,
+				4583E508D482459CFA7B0CBA /* [CP] Embed Pods Frameworks */,
+				8AA72255FD939A3B6AC61503 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADFFB1C720BB347900CF27E8 /* PBXTargetDependency */,
+			);
+			name = FerdaTests;
+			productName = FerdaTests;
+			productReference = ADFFB1C520BB347900CF27E8 /* FerdaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ADFFB1A620BB347800CF27E8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Ragnar Development";
+				TargetAttributes = {
+					ADFFB1AD20BB347800CF27E8 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					ADFFB1C420BB347900CF27E8 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = ADFFB1AD20BB347800CF27E8;
+					};
+				};
+			};
+			buildConfigurationList = ADFFB1A920BB347800CF27E8 /* Build configuration list for PBXProject "Ferda" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ADFFB1A520BB347800CF27E8;
+			productRefGroup = ADFFB1AF20BB347800CF27E8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ADFFB1AD20BB347800CF27E8 /* Ferda */,
+				ADFFB1C420BB347900CF27E8 /* FerdaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ADFFB1AC20BB347800CF27E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADFFB1BF20BB347900CF27E8 /* LaunchScreen.storyboard in Resources */,
+				ADFFB1BC20BB347900CF27E8 /* Assets.xcassets in Resources */,
+				ADFFB1DD20BB6ED300CF27E8 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADFFB1C320BB347900CF27E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		17BB57F8BEE088A12CD67A76 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ferda/Pods-Ferda-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4583E508D482459CFA7B0CBA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FerdaTests/Pods-FerdaTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5ABF1362D8489ADFF2E5C720 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Ferda-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6FFB0196011972A12BEFCC16 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Ferda/Pods-Ferda-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ferda/Pods-Ferda-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8AA72255FD939A3B6AC61503 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FerdaTests/Pods-FerdaTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBC104968AA8DD0D4846EDFA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FerdaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ADFFB1AA20BB347800CF27E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADD92DA620C8ADED00E682BE /* AuthenticationViewModel.swift in Sources */,
+				ADFF426A20C20871004AE8EE /* StartupViewController.swift in Sources */,
+				ADD92DA220C8AD6600E682BE /* BaseViewModel.swift in Sources */,
+				ADFFB1DB20BB6A3B00CF27E8 /* DashboardViewController.swift in Sources */,
+				ADD92DA020C8AB5100E682BE /* RootWindow.swift in Sources */,
+				ADD92DA420C8ADCA00E682BE /* StartupViewModel.swift in Sources */,
+				ADEF14C720EFCF170097AB9F /* ModalViewModel.swift in Sources */,
+				ADFFB1B220BB347800CF27E8 /* AppDelegate.swift in Sources */,
+				ADFFB1D520BB353500CF27E8 /* Core.swift in Sources */,
+				ADFF426C20C21173004AE8EE /* BaseViewController.swift in Sources */,
+				ADFFB1D720BB37D800CF27E8 /* AuthenticationManager.swift in Sources */,
+				ADD92DA820C8B1AE00E682BE /* DashboardViewModel.swift in Sources */,
+				ADFFB1D920BB6A3200CF27E8 /* AuthenticationViewController.swift in Sources */,
+				ADEF14C920EFFB450097AB9F /* BaseScreenModel.swift in Sources */,
+				ADFFB1BA20BB347800CF27E8 /* Ferda.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADFFB1C120BB347900CF27E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADFFB1CA20BB347900CF27E8 /* FerdaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ADFFB1C720BB347900CF27E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADFFB1AD20BB347800CF27E8 /* Ferda */;
+			targetProxy = ADFFB1C620BB347900CF27E8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ADFFB1BD20BB347900CF27E8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADFFB1BE20BB347900CF27E8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ADFFB1CC20BB347900CF27E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ADFFB1CD20BB347900CF27E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ADFFB1CF20BB347900CF27E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7740B3992E25D039A0F8536 /* Pods-Ferda.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Ferda/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ragnar.app.Ferda;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ADFFB1D020BB347900CF27E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20C4D1DA8DAD98C2CE2F48DB /* Pods-Ferda.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Ferda/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ragnar.app.Ferda;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ADFFB1D220BB347900CF27E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1B796D50EEE02C5ED525F4B /* Pods-FerdaTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W375UQHBF4;
+				INFOPLIST_FILE = FerdaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ragnar.app.FerdaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ferda.app/Ferda";
+			};
+			name = Debug;
+		};
+		ADFFB1D320BB347900CF27E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00FE089C1F646FFD4F9DCC90 /* Pods-FerdaTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W375UQHBF4;
+				INFOPLIST_FILE = FerdaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ragnar.app.FerdaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ferda.app/Ferda";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ADFFB1A920BB347800CF27E8 /* Build configuration list for PBXProject "Ferda" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADFFB1CC20BB347900CF27E8 /* Debug */,
+				ADFFB1CD20BB347900CF27E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADFFB1CE20BB347900CF27E8 /* Build configuration list for PBXNativeTarget "Ferda" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADFFB1CF20BB347900CF27E8 /* Debug */,
+				ADFFB1D020BB347900CF27E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADFFB1D120BB347900CF27E8 /* Build configuration list for PBXNativeTarget "FerdaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADFFB1D220BB347900CF27E8 /* Debug */,
+				ADFFB1D320BB347900CF27E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		ADFFB1B820BB347800CF27E8 /* Ferda.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				ADFFB1B920BB347800CF27E8 /* Ferda.xcdatamodel */,
+			);
+			currentVersion = ADFFB1B920BB347800CF27E8 /* Ferda.xcdatamodel */;
+			path = Ferda.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = ADFFB1A620BB347800CF27E8 /* Project object */;
+}

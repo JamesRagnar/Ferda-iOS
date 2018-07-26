@@ -46,7 +46,8 @@ class RootWindow: UIWindow {
         }
 
         if let viewModel = viewModel as? DashboardViewModelType {
-            rootViewController = DashboardViewController(viewModel: viewModel)
+            let dashboardVC = DashboardViewController(viewModel: viewModel)
+            rootViewController = UINavigationController(rootViewController: dashboardVC)
             return
         }
 

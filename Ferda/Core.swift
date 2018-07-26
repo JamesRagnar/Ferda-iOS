@@ -23,22 +23,14 @@ protocol CoreType {
 class Core {
 
     private lazy var authenticationManager = AuthenticationManager()
+    private lazy var userManager = UserManager()
+
+    private lazy var applicationModel = Variable<BaseViewModelType>(StartupViewModel())
 }
 
 extension Core: CoreType {
 
     var applicationViewModel: Observable<BaseViewModelType> {
-        return authenticationManager
-            .authenticationState
-            .map({ (authenticationState) -> BaseViewModel in
-                switch authenticationState {
-                case .none:
-                    return StartupViewModel()
-                case .unauthorized:
-                    return AuthenticationViewModel(authenticationManager: self.authenticationManager)
-                case .authorized:
-                    return DashboardViewModel(authenticationManager: self.authenticationManager)
-                }
-            })
+        return applicationModel.asObservable()
     }
 }

@@ -71,8 +71,6 @@ class AuthenticationViewController: BaseViewController {
     override func loadView() {
         super.loadView()
 
-        view.backgroundColor = .gray
-
         view.addSubview(emailTextField)
         view.addSubview(passwordTextField)
         view.addSubview(loginButton)

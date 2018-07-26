@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		491C77DB204E86135DDD3B43 /* Pods_Ferda.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCB6DFBEA4F93878A8C8537F /* Pods_Ferda.framework */; };
+		AD7707A62102B3C00039240F /* AddContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7707A52102B3C00039240F /* AddContactViewController.swift */; };
+		AD7707A82102B3D80039240F /* AddContactViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7707A72102B3D80039240F /* AddContactViewModel.swift */; };
+		AD7707AA2102BD100039240F /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7707A92102BD100039240F /* UserManager.swift */; };
+		AD7707AC2102BE020039240F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7707AB2102BE020039240F /* User.swift */; };
 		ADD92DA020C8AB5100E682BE /* RootWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD92D9F20C8AB5100E682BE /* RootWindow.swift */; };
 		ADD92DA220C8AD6600E682BE /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD92DA120C8AD6600E682BE /* BaseViewModel.swift */; };
 		ADD92DA420C8ADCA00E682BE /* StartupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD92DA320C8ADCA00E682BE /* StartupViewModel.swift */; };
@@ -44,6 +48,10 @@
 		00FE089C1F646FFD4F9DCC90 /* Pods-FerdaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FerdaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FerdaTests/Pods-FerdaTests.release.xcconfig"; sourceTree = "<group>"; };
 		20C4D1DA8DAD98C2CE2F48DB /* Pods-Ferda.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ferda.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ferda/Pods-Ferda.release.xcconfig"; sourceTree = "<group>"; };
 		4C1B12B2E525372B593468F8 /* Pods_FerdaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FerdaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD7707A52102B3C00039240F /* AddContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactViewController.swift; sourceTree = "<group>"; };
+		AD7707A72102B3D80039240F /* AddContactViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactViewModel.swift; sourceTree = "<group>"; };
+		AD7707A92102BD100039240F /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		AD7707AB2102BE020039240F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		ADD92D9F20C8AB5100E682BE /* RootWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootWindow.swift; sourceTree = "<group>"; };
 		ADD92DA120C8AD6600E682BE /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		ADD92DA320C8ADCA00E682BE /* StartupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupViewModel.swift; sourceTree = "<group>"; };
@@ -118,13 +126,17 @@
 				ADFFB1B120BB347800CF27E8 /* AppDelegate.swift */,
 				ADD92D9F20C8AB5100E682BE /* RootWindow.swift */,
 				ADFFB1D420BB353500CF27E8 /* Core.swift */,
+				ADFFB1D620BB37D800CF27E8 /* AuthenticationManager.swift */,
+				AD7707A92102BD100039240F /* UserManager.swift */,
+				AD7707AB2102BE020039240F /* User.swift */,
 				ADFF426920C20871004AE8EE /* StartupViewController.swift */,
 				ADD92DA320C8ADCA00E682BE /* StartupViewModel.swift */,
 				ADFFB1D820BB6A3200CF27E8 /* AuthenticationViewController.swift */,
 				ADD92DA520C8ADED00E682BE /* AuthenticationViewModel.swift */,
 				ADFFB1DA20BB6A3B00CF27E8 /* DashboardViewController.swift */,
 				ADD92DA720C8B1AE00E682BE /* DashboardViewModel.swift */,
-				ADFFB1D620BB37D800CF27E8 /* AuthenticationManager.swift */,
+				AD7707A52102B3C00039240F /* AddContactViewController.swift */,
+				AD7707A72102B3D80039240F /* AddContactViewModel.swift */,
 				ADFF426B20C21173004AE8EE /* BaseViewController.swift */,
 				ADD92DA120C8AD6600E682BE /* BaseViewModel.swift */,
 				ADEF14C820EFFB450097AB9F /* BaseScreenModel.swift */,
@@ -384,6 +396,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD7707AA2102BD100039240F /* UserManager.swift in Sources */,
 				ADD92DA620C8ADED00E682BE /* AuthenticationViewModel.swift in Sources */,
 				ADFF426A20C20871004AE8EE /* StartupViewController.swift in Sources */,
 				ADD92DA220C8AD6600E682BE /* BaseViewModel.swift in Sources */,
@@ -396,9 +409,12 @@
 				ADFF426C20C21173004AE8EE /* BaseViewController.swift in Sources */,
 				ADFFB1D720BB37D800CF27E8 /* AuthenticationManager.swift in Sources */,
 				ADD92DA820C8B1AE00E682BE /* DashboardViewModel.swift in Sources */,
+				AD7707A82102B3D80039240F /* AddContactViewModel.swift in Sources */,
 				ADFFB1D920BB6A3200CF27E8 /* AuthenticationViewController.swift in Sources */,
+				AD7707A62102B3C00039240F /* AddContactViewController.swift in Sources */,
 				ADEF14C920EFFB450097AB9F /* BaseScreenModel.swift in Sources */,
 				ADFFB1BA20BB347800CF27E8 /* Ferda.xcdatamodeld in Sources */,
+				AD7707AC2102BE020039240F /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -22,10 +22,4 @@ class StartupViewController: BaseViewController {
         super.init()
         bind(viewModel)
     }
-
-    override func loadView() {
-        super.loadView()
-
-        view.backgroundColor = .gray
-    }
 }

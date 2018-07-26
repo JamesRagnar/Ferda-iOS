@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 import RxSwift
 
-class BaseViewController: UIViewController {
+class BaseViewController: UIViewController, NavigatorType {
 
     internal lazy var disposeBag = DisposeBag()
 
@@ -38,6 +38,12 @@ class BaseViewController: UIViewController {
 
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+
+    override func loadView() {
+        super.loadView()
+
+        view.backgroundColor = .gray
     }
 
     internal func bind(_ viewModel: ScreenModelType) {
@@ -70,9 +76,8 @@ class BaseViewController: UIViewController {
                           completion: nil)
         }
     }
-}
 
-extension BaseViewController: NavigatorType {
+    // MARK: NavigatorType
 
     func navigateBack() -> Bool {
         return navigationController?.popViewController(animated: true) != nil

@@ -11,14 +11,19 @@ import UIKit
 
 class DashboardViewController: BaseViewController {
 
-    private lazy var logoutButton: UIButton = {
-        let button = UIButton()
-        button.backgroundColor = .white
-        button.setTitle("Logout", for: .normal)
-        button.setTitleColor(.black, for: .normal)
-        button.addTarget(self,
-                         action: #selector(logoutButtonTapped),
-                         for: .touchUpInside)
+    private lazy var logoutButton: UIBarButtonItem = {
+        let button = UIBarButtonItem(title: "Logout",
+                                     style: .plain,
+                                     target: self,
+                                     action: #selector(logoutButtonTapped))
+        return button
+    }()
+
+    private lazy var addContactButton: UIBarButtonItem = {
+        let button = UIBarButtonItem(title: "Add Contact",
+                                     style: .plain,
+                                     target: self,
+                                     action: #selector(addContactButtonTapped))
         return button
     }()
 
@@ -37,22 +42,29 @@ class DashboardViewController: BaseViewController {
     override func loadView() {
         super.loadView()
 
-        view.backgroundColor = .gray
-
-        view.addSubview(logoutButton)
-    }
-
-    override func viewWillLayoutSubviews() {
-        super.viewWillLayoutSubviews()
-
-        let fieldSize = CGSize(width: view.frame.width - 40, height: 40)
-
-        logoutButton.frame.size = fieldSize
-        logoutButton.frame.origin.x = 20
-        logoutButton.frame.origin.y = view.safeAreaInsets.top + 20
+        navigationItem.leftBarButtonItem = logoutButton
+        navigationItem.rightBarButtonItem = addContactButton
     }
 
     @objc private func logoutButtonTapped() {
         viewModel.logout()
+    }
+
+    @objc private func addContactButtonTapped() {
+        viewModel.showAddContactView()
+    }
+
+    override func navigate(to screenModel: ScreenModelType) -> Bool {
+        if super.navigate(to: screenModel) {
+            return false
+        }
+
+        if let addContactViewModel = screenModel as? AddContactViewModelType {
+            let addContactViewController = AddContactViewController(viewModel: addContactViewModel)
+            navigationController?.pushViewController(addContactViewController, animated: true)
+            return true
+        }
+
+        return false
     }
 }

@@ -11,6 +11,7 @@ import Foundation
 protocol DashboardViewModelType: ScreenModelType {
 
     func logout()
+    func showAddContactView()
 }
 
 class DashboardViewModel: ScreenModel {
@@ -26,5 +27,10 @@ extension DashboardViewModel: DashboardViewModelType {
 
     func logout() {
         authenticationManager.logOut()
+    }
+
+    func showAddContactView() {
+        let addContactViewModel = AddContactViewModel()
+        _ = navigator?.navigate(to: addContactViewModel)
     }
 }
